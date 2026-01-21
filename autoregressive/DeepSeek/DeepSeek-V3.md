@@ -23,11 +23,147 @@ This section provides a progressive guide from quick deployment to performance o
 
 ### 3.1 Basic Configuration
 
-**Interactive Command Generator**: Use the configuration selector below to automatically generate the appropriate deployment command for your hardware platform, model variant, deployment strategy, and thinking capabilities.
+**Deployment Commands**: Choose the appropriate deployment command based on your hardware platform and deployment strategy.
 
-import DeepSeekConfigGenerator from '@site/src/components/autoregressive/DeepSeekV3ConfigGenerator';
+<Tabs>
+  <Tab title="Single Node">
+    **Single Node Deployment** - For single-node multi-GPU setups.
 
-<DeepSeekConfigGenerator />
+    <Tabs>
+      <Tab title="8x H100/B200">
+        ```shell
+        python -m sglang.launch_server \
+          --model deepseek-ai/DeepSeek-V3 \
+          --tp 8 \
+          --trust-remote-code \
+          --host 0.0.0.0 \
+          --port 8000
+        ```
+      </Tab>
+      <Tab title="8x A100 (80GB)">
+        ```shell
+        python -m sglang.launch_server \
+          --model deepseek-ai/DeepSeek-V3 \
+          --tp 8 \
+          --trust-remote-code \
+          --host 0.0.0.0 \
+          --port 8000
+        ```
+      </Tab>
+      <Tab title="8x MI300X">
+        ```shell
+        python -m sglang.launch_server \
+          --model deepseek-ai/DeepSeek-V3 \
+          --tp 8 \
+          --trust-remote-code \
+          --host 0.0.0.0 \
+          --port 8000
+        ```
+      </Tab>
+    </Tabs>
+  </Tab>
+  <Tab title="Multi-Node">
+    **Multi-Node Deployment** - For distributed deployment across multiple nodes.
+
+    <Tabs>
+      <Tab title="2 Nodes (16 GPUs)">
+        **Node 0 (Head):**
+        ```shell
+        python -m sglang.launch_server \
+          --model deepseek-ai/DeepSeek-V3 \
+          --tp 16 \
+          --nnodes 2 \
+          --node-rank 0 \
+          --trust-remote-code \
+          --host 0.0.0.0 \
+          --port 8000
+        ```
+
+        **Node 1:**
+        ```shell
+        python -m sglang.launch_server \
+          --model deepseek-ai/DeepSeek-V3 \
+          --tp 16 \
+          --nnodes 2 \
+          --node-rank 1 \
+          --trust-remote-code \
+          --host 0.0.0.0 \
+          --port 8000
+        ```
+      </Tab>
+    </Tabs>
+  </Tab>
+  <Tab title="With Speculative Decoding">
+    **EAGLE Speculative Decoding** - For lower latency inference.
+
+    <Tabs>
+      <Tab title="8x H100/B200">
+        ```shell
+        python -m sglang.launch_server \
+          --model deepseek-ai/DeepSeek-V3 \
+          --tp 8 \
+          --dp 8 \
+          --enable-dp-attention \
+          --speculative-algorithm EAGLE \
+          --speculative-num-steps 3 \
+          --speculative-eagle-topk 1 \
+          --speculative-num-draft-tokens 4 \
+          --trust-remote-code \
+          --host 0.0.0.0 \
+          --port 8000
+        ```
+      </Tab>
+      <Tab title="8x MI300X">
+        ```shell
+        python -m sglang.launch_server \
+          --model deepseek-ai/DeepSeek-V3 \
+          --tp 8 \
+          --dp 8 \
+          --enable-dp-attention \
+          --speculative-algorithm EAGLE \
+          --speculative-num-steps 3 \
+          --speculative-eagle-topk 1 \
+          --speculative-num-draft-tokens 4 \
+          --trust-remote-code \
+          --host 0.0.0.0 \
+          --port 8000
+        ```
+      </Tab>
+    </Tabs>
+  </Tab>
+  <Tab title="High Throughput">
+    **High Throughput Mode** - Optimized for maximum throughput with EP+DP.
+
+    <Tabs>
+      <Tab title="8x H100/B200">
+        ```shell
+        python -m sglang.launch_server \
+          --model deepseek-ai/DeepSeek-V3 \
+          --tp 8 \
+          --ep 8 \
+          --dp 8 \
+          --enable-dp-attention \
+          --trust-remote-code \
+          --host 0.0.0.0 \
+          --port 8000
+        ```
+      </Tab>
+      <Tab title="8x MI300X">
+        ```shell
+        python -m sglang.launch_server \
+          --model deepseek-ai/DeepSeek-V3 \
+          --tp 8 \
+          --ep 8 \
+          --dp 8 \
+          --enable-dp-attention \
+          --trust-remote-code \
+          --host 0.0.0.0 \
+          --port 8000
+        ```
+      </Tab>
+    </Tabs>
+  </Tab>
+</Tabs>
 
 ### 3.2 Configuration Tips
 For more detailed configuration tips, please refer to [DeepSeek-V3 Usage](https://docs.sglang.io/basic_usage/deepseek_v3.html).
