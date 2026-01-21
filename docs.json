@@ -1,68 +1,187 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "SGLang Cookbook",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/img/favicon.png",
+  "logo": {
+    "light": "/img/logo.png",
+    "dark": "/img/logo.png"
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Cookbook",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "intro"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Autoregressive Models / Qwen",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "autoregressive/Qwen/Qwen3",
+              "autoregressive/Qwen/Qwen3-Next",
+              "autoregressive/Qwen/Qwen3-VL",
+              "autoregressive/Qwen/Qwen3-Coder-480B-A35B",
+              "autoregressive/Qwen/Qwen2.5-VL"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Autoregressive Models / DeepSeek",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "autoregressive/DeepSeek/DeepSeek-V3_2",
+              "autoregressive/DeepSeek/DeepSeek-V3_1",
+              "autoregressive/DeepSeek/DeepSeek-V3",
+              "autoregressive/DeepSeek/DeepSeek-R1",
+              "autoregressive/DeepSeek/DeepSeek-OCR"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Autoregressive Models / Llama",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "autoregressive/Llama/Llama4-Scout",
+              "autoregressive/Llama/Llama3.3-70B",
+              "autoregressive/Llama/Llama3.1"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Autoregressive Models / GLM",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "autoregressive/GLM/Glyph",
+              "autoregressive/GLM/GLM-4.5V",
+              "autoregressive/GLM/GLM-4.6",
+              "autoregressive/GLM/GLM-4.6V",
+              "autoregressive/GLM/GLM-4.5",
+              "autoregressive/GLM/GLM-4.7",
+              "autoregressive/GLM/GLM-4.7-Flash"
+            ]
+          },
+          {
+            "group": "Autoregressive Models / OpenAI",
+            "pages": [
+              "autoregressive/OpenAI/GPT-OSS"
+            ]
+          },
+          {
+            "group": "Autoregressive Models / Moonshotai",
+            "pages": [
+              "autoregressive/Moonshotai/Kimi-K2",
+              "autoregressive/Moonshotai/Kimi-Linear"
+            ]
+          },
+          {
+            "group": "Autoregressive Models / MiniMax",
+            "pages": [
+              "autoregressive/MiniMax/MiniMax-M2"
+            ]
+          },
+          {
+            "group": "Autoregressive Models / NVIDIA",
+            "pages": [
+              "autoregressive/NVIDIA/Nemotron3-Nano"
+            ]
+          },
+          {
+            "group": "Autoregressive Models / Ernie",
+            "pages": [
+              "autoregressive/Ernie/Ernie4.5",
+              "autoregressive/Ernie/Ernie4.5-VL"
+            ]
+          },
+          {
+            "group": "Autoregressive Models / InternVL",
+            "pages": [
+              "autoregressive/InternVL/InternVL3_5"
+            ]
+          },
+          {
+            "group": "Autoregressive Models / InternLM",
+            "pages": [
+              "autoregressive/InternLM/Intern-S1"
+            ]
+          },
+          {
+            "group": "Autoregressive Models / Jina AI",
+            "pages": [
+              "autoregressive/Jina/Jina-reranker-m0"
+            ]
+          },
+          {
+            "group": "Autoregressive Models / Mistral",
+            "pages": [
+              "autoregressive/Mistral/Mistral-3",
+              "autoregressive/Mistral/Devstral-2"
+            ]
+          },
+          {
+            "group": "Autoregressive Models / Xiaomi",
+            "pages": [
+              "autoregressive/Xiaomi/MiMo-V2-Flash"
+            ]
+          },
+          {
+            "group": "Autoregressive Models / FlashLabs",
+            "pages": [
+              "autoregressive/FlashLabs/Chroma1.0"
+            ]
+          },
+          {
+            "group": "Diffusion Models",
+            "pages": [
+              "diffusion/README"
+            ]
+          },
+          {
+            "group": "Diffusion Models / FLUX",
+            "pages": [
+              "diffusion/FLUX/FLUX"
+            ]
+          },
+          {
+            "group": "Diffusion Models / Wan",
+            "pages": [
+              "diffusion/Wan/Wan2.1",
+              "diffusion/Wan/Wan2.2"
+            ]
+          },
+          {
+            "group": "Diffusion Models / Qwen-Image",
+            "pages": [
+              "diffusion/Qwen-Image/Qwen-Image",
+              "diffusion/Qwen-Image/Qwen-Image-Edit"
+            ]
+          },
+          {
+            "group": "Diffusion Models / Z-Image",
+            "pages": [
+              "diffusion/Z-Image/Z-Image-Turbo"
+            ]
+          },
+          {
+            "group": "Others / SpecBundle",
+            "pages": [
+              "specbundle/supported_models",
+              "specbundle/usage"
+            ]
+          },
+          {
+            "group": "Others / Benchmarks",
+            "pages": [
+              "base/benchmarks/lm_benchmark",
+              "base/benchmarks/diffusion_model_benchmark"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "base/reference/server_arguments"
             ]
           }
         ]
@@ -71,52 +190,25 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "GitHub",
+          "href": "https://github.com/sgl-project/sgl-cookbook",
+          "icon": "github"
         }
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "GitHub",
+        "href": "https://github.com/sgl-project/sgl-cookbook"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+      "copy",
+      "view"
+    ]
   }
 }
