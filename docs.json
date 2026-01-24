@@ -7,10 +7,10 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/img/favicon.png",
+  "favicon": "/static/img/favicon.png",
   "logo": {
-    "light": "/img/logo.png",
-    "dark": "/img/logo.png"
+    "light": "/static/img/logo.png",
+    "dark": "/static/img/logo.png"
   },
   "navigation": {
     "tabs": [
@@ -20,188 +20,174 @@
           {
             "group": "Getting Started",
             "pages": [
-              "intro"
+              "docs/intro"
             ]
           },
           {
             "group": "Autoregressive Models / Qwen",
             "pages": [
-              "autoregressive/Qwen/Qwen3",
-              "autoregressive/Qwen/Qwen3-Next",
-              "autoregressive/Qwen/Qwen3-VL",
-              "autoregressive/Qwen/Qwen3-Coder-480B-A35B",
-              "autoregressive/Qwen/Qwen2.5-VL"
+              "docs/autoregressive/Qwen/Qwen3",
+              "docs/autoregressive/Qwen/Qwen3-Next",
+              "docs/autoregressive/Qwen/Qwen3-VL",
+              "docs/autoregressive/Qwen/Qwen3-Coder-480B-A35B",
+              "docs/autoregressive/Qwen/Qwen2.5-VL"
             ]
           },
           {
             "group": "Autoregressive Models / DeepSeek",
             "pages": [
-              "autoregressive/DeepSeek/DeepSeek-V3_2",
-              "autoregressive/DeepSeek/DeepSeek-V3_1",
-              "autoregressive/DeepSeek/DeepSeek-V3",
-              "autoregressive/DeepSeek/DeepSeek-R1",
-              "autoregressive/DeepSeek/DeepSeek-OCR"
+              "docs/autoregressive/DeepSeek/DeepSeek-V3_2",
+              "docs/autoregressive/DeepSeek/DeepSeek-V3_1",
+              "docs/autoregressive/DeepSeek/DeepSeek-V3",
+              "docs/autoregressive/DeepSeek/DeepSeek-R1",
+              "docs/autoregressive/DeepSeek/DeepSeek-OCR"
             ]
           },
           {
             "group": "Autoregressive Models / Llama",
             "pages": [
-              "autoregressive/Llama/Llama4-Scout",
-              "autoregressive/Llama/Llama3.3-70B",
-              "autoregressive/Llama/Llama3.1"
+              "docs/autoregressive/Llama/Llama4-Scout",
+              "docs/autoregressive/Llama/Llama3.3-70B",
+              "docs/autoregressive/Llama/Llama3.1"
             ]
           },
           {
             "group": "Autoregressive Models / GLM",
             "pages": [
-              "autoregressive/GLM/Glyph",
-              "autoregressive/GLM/GLM-4.5V",
-              "autoregressive/GLM/GLM-4.6",
-              "autoregressive/GLM/GLM-4.6V",
-              "autoregressive/GLM/GLM-4.5",
-              "autoregressive/GLM/GLM-4.7",
-              "autoregressive/GLM/GLM-4.7-Flash"
+              "docs/autoregressive/GLM/GLM-Glyph",
+              "docs/autoregressive/GLM/GLM-4.5",
+              "docs/autoregressive/GLM/GLM-4.5V",
+              "docs/autoregressive/GLM/GLM-4.6",
+              "docs/autoregressive/GLM/GLM-4.6V",
+              "docs/autoregressive/GLM/GLM-4.7",
+              "docs/autoregressive/GLM/GLM-4.7-Flash"
             ]
           },
           {
             "group": "Autoregressive Models / OpenAI",
             "pages": [
-              "autoregressive/OpenAI/GPT-OSS"
+              "docs/autoregressive/OpenAI/GPT-OSS"
             ]
           },
           {
             "group": "Autoregressive Models / Moonshotai",
             "pages": [
-              "autoregressive/Moonshotai/Kimi-K2",
-              "autoregressive/Moonshotai/Kimi-Linear"
+              "docs/autoregressive/Moonshotai/Kimi-K2",
+              "docs/autoregressive/Moonshotai/Kimi-Linear"
             ]
           },
           {
             "group": "Autoregressive Models / MiniMax",
             "pages": [
-              "autoregressive/MiniMax/MiniMax-M2"
+              "docs/autoregressive/MiniMax/MiniMax-M2"
             ]
           },
           {
             "group": "Autoregressive Models / NVIDIA",
             "pages": [
-              "autoregressive/NVIDIA/Nemotron3-Nano"
+              "docs/autoregressive/NVIDIA/Nemotron3-Nano"
             ]
           },
           {
             "group": "Autoregressive Models / Ernie",
             "pages": [
-              "autoregressive/Ernie/Ernie4.5",
-              "autoregressive/Ernie/Ernie4.5-VL"
+              "docs/autoregressive/Ernie/Ernie4.5",
+              "docs/autoregressive/Ernie/Ernie4.5-VL"
             ]
           },
           {
             "group": "Autoregressive Models / InternVL",
             "pages": [
-              "autoregressive/InternVL/InternVL3_5"
+              "docs/autoregressive/InternVL/InternVL3.5"
             ]
           },
           {
             "group": "Autoregressive Models / InternLM",
             "pages": [
-              "autoregressive/InternLM/Intern-S1"
+              "docs/autoregressive/InternLM/Intern-S1"
             ]
           },
           {
             "group": "Autoregressive Models / Jina AI",
             "pages": [
-              "autoregressive/Jina/Jina-reranker-m0"
+              "docs/autoregressive/Jina/Jina-reranker-m0"
             ]
           },
           {
             "group": "Autoregressive Models / Mistral",
             "pages": [
-              "autoregressive/Mistral/Mistral-3",
-              "autoregressive/Mistral/Devstral-2"
+              "docs/autoregressive/Mistral/Mistral-3",
+              "docs/autoregressive/Mistral/Devstral-2"
             ]
           },
           {
             "group": "Autoregressive Models / Xiaomi",
             "pages": [
-              "autoregressive/Xiaomi/MiMo-V2-Flash"
+              "docs/autoregressive/Xiaomi/MiMo-V2-Flash"
             ]
           },
           {
             "group": "Autoregressive Models / FlashLabs",
             "pages": [
-              "autoregressive/FlashLabs/Chroma1.0"
-            ]
-          },
-          {
-            "group": "Diffusion Models",
-            "pages": [
-              "diffusion/README"
+              "docs/autoregressive/FlashLabs/Chroma1.0"
             ]
           },
           {
             "group": "Diffusion Models / FLUX",
             "pages": [
-              "diffusion/FLUX/FLUX"
+              "docs/diffusion/FLUX/FLUX"
             ]
           },
           {
             "group": "Diffusion Models / Wan",
             "pages": [
-              "diffusion/Wan/Wan2.1",
-              "diffusion/Wan/Wan2.2"
+              "docs/diffusion/Wan/Wan2.1",
+              "docs/diffusion/Wan/Wan2.2"
             ]
           },
           {
             "group": "Diffusion Models / Qwen-Image",
             "pages": [
-              "diffusion/Qwen-Image/Qwen-Image",
-              "diffusion/Qwen-Image/Qwen-Image-Edit"
+              "docs/diffusion/Qwen-Image/Qwen-Image",
+              "docs/diffusion/Qwen-Image/Qwen-Image-Edit"
             ]
           },
           {
             "group": "Diffusion Models / Z-Image",
             "pages": [
-              "diffusion/Z-Image/Z-Image-Turbo"
+              "docs/diffusion/Z-Image/Z-Image-Turbo"
             ]
           },
           {
             "group": "Others / SpecBundle",
             "pages": [
-              "specbundle/supported_models",
-              "specbundle/usage"
+              "docs/specbundle/supported_models",
+              "docs/specbundle/specbundle_usage"
             ]
           },
           {
             "group": "Others / Benchmarks",
             "pages": [
-              "base/benchmarks/lm_benchmark",
-              "base/benchmarks/diffusion_model_benchmark"
+              "docs/base/benchmarks/autoregressive_model_benchmark",
+              "docs/base/benchmarks/diffusion_model_benchmark"
             ]
           },
           {
             "group": "Reference",
             "pages": [
-              "base/reference/server_arguments"
+              "docs/base/reference/server_arguments"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "GitHub",
-          "href": "https://github.com/sgl-project/sgl-cookbook",
-          "icon": "github"
-        }
-      ]
-    }
+    ]
   },
   "navbar": {
     "links": [
       {
         "label": "GitHub",
-        "href": "https://github.com/sgl-project/sgl-cookbook"
+        "href": "https://github.com/sgl-project/sgl-cookbook",
+        "icon": "github"
       }
     ]
   },
