@@ -196,5 +196,27 @@
       "copy",
       "view"
     ]
-  }
+  },
+  "redirects": [
+    {
+      "source": "/autoregressive/:path*",
+      "destination": "/docs/autoregressive/:path*"
+    },
+    {
+      "source": "/diffusion/:path*",
+      "destination": "/docs/diffusion/:path*"
+    },
+    {
+      "source": "/specbundle/:path*",
+      "destination": "/docs/specbundle/:path*"
+    },
+    {
+      "source": "/base/:path*",
+      "destination": "/docs/base/:path*"
+    },
+    {
+      "source": "/intro",
+      "destination": "/docs/intro"
+    }
+  ]
 }
