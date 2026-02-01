@@ -24,152 +24,167 @@
             ]
           },
           {
-            "group": "Autoregressive Models / Qwen",
+            "group": "Autoregressive Models",
             "pages": [
-              "docs/autoregressive/Qwen/Qwen3",
-              "docs/autoregressive/Qwen/Qwen3-Next",
-              "docs/autoregressive/Qwen/Qwen3-VL",
-              "docs/autoregressive/Qwen/Qwen3-Coder-480B-A35B",
-              "docs/autoregressive/Qwen/Qwen2.5-VL"
+              {
+                "group": "Qwen",
+                "pages": [
+                  "docs/autoregressive/Qwen/Qwen3",
+                  "docs/autoregressive/Qwen/Qwen3-Next",
+                  "docs/autoregressive/Qwen/Qwen3-VL",
+                  "docs/autoregressive/Qwen/Qwen3-Coder-480B-A35B",
+                  "docs/autoregressive/Qwen/Qwen2.5-VL"
+                ]
+              },
+              {
+                "group": "DeepSeek",
+                "pages": [
+                  "docs/autoregressive/DeepSeek/DeepSeek-V3_2",
+                  "docs/autoregressive/DeepSeek/DeepSeek-V3_1",
+                  "docs/autoregressive/DeepSeek/DeepSeek-V3",
+                  "docs/autoregressive/DeepSeek/DeepSeek-R1",
+                  "docs/autoregressive/DeepSeek/DeepSeek-OCR"
+                ]
+              },
+              {
+                "group": "Llama",
+                "pages": [
+                  "docs/autoregressive/Llama/Llama4-Scout",
+                  "docs/autoregressive/Llama/Llama3.3-70B",
+                  "docs/autoregressive/Llama/Llama3.1"
+                ]
+              },
+              {
+                "group": "GLM",
+                "pages": [
+                  "docs/autoregressive/GLM/GLM-Glyph",
+                  "docs/autoregressive/GLM/GLM-4.5",
+                  "docs/autoregressive/GLM/GLM-4.5V",
+                  "docs/autoregressive/GLM/GLM-4.6",
+                  "docs/autoregressive/GLM/GLM-4.6V",
+                  "docs/autoregressive/GLM/GLM-4.7",
+                  "docs/autoregressive/GLM/GLM-4.7-Flash"
+                ]
+              },
+              {
+                "group": "OpenAI",
+                "pages": [
+                  "docs/autoregressive/OpenAI/GPT-OSS"
+                ]
+              },
+              {
+                "group": "Moonshotai",
+                "pages": [
+                  "docs/autoregressive/Moonshotai/Kimi-K2",
+                  "docs/autoregressive/Moonshotai/Kimi-Linear"
+                ]
+              },
+              {
+                "group": "MiniMax",
+                "pages": [
+                  "docs/autoregressive/MiniMax/MiniMax-M2"
+                ]
+              },
+              {
+                "group": "NVIDIA",
+                "pages": [
+                  "docs/autoregressive/NVIDIA/Nemotron3-Nano"
+                ]
+              },
+              {
+                "group": "Ernie",
+                "pages": [
+                  "docs/autoregressive/Ernie/Ernie4.5",
+                  "docs/autoregressive/Ernie/Ernie4.5-VL"
+                ]
+              },
+              {
+                "group": "InternVL",
+                "pages": [
+                  "docs/autoregressive/InternVL/InternVL3.5"
+                ]
+              },
+              {
+                "group": "InternLM",
+                "pages": [
+                  "docs/autoregressive/InternLM/Intern-S1"
+                ]
+              },
+              {
+                "group": "Jina AI",
+                "pages": [
+                  "docs/autoregressive/Jina/Jina-reranker-m0"
+                ]
+              },
+              {
+                "group": "Mistral",
+                "pages": [
+                  "docs/autoregressive/Mistral/Mistral-3",
+                  "docs/autoregressive/Mistral/Devstral-2"
+                ]
+              },
+              {
+                "group": "Xiaomi",
+                "pages": [
+                  "docs/autoregressive/Xiaomi/MiMo-V2-Flash"
+                ]
+              },
+              {
+                "group": "FlashLabs",
+                "pages": [
+                  "docs/autoregressive/FlashLabs/Chroma1.0"
+                ]
+              }
             ]
           },
           {
-            "group": "Autoregressive Models / DeepSeek",
+            "group": "Diffusion Models",
             "pages": [
-              "docs/autoregressive/DeepSeek/DeepSeek-V3_2",
-              "docs/autoregressive/DeepSeek/DeepSeek-V3_1",
-              "docs/autoregressive/DeepSeek/DeepSeek-V3",
-              "docs/autoregressive/DeepSeek/DeepSeek-R1",
-              "docs/autoregressive/DeepSeek/DeepSeek-OCR"
+              {
+                "group": "FLUX",
+                "pages": [
+                  "docs/diffusion/FLUX/FLUX"
+                ]
+              },
+              {
+                "group": "Wan",
+                "pages": [
+                  "docs/diffusion/Wan/Wan2.1",
+                  "docs/diffusion/Wan/Wan2.2"
+                ]
+              },
+              {
+                "group": "Qwen-Image",
+                "pages": [
+                  "docs/diffusion/Qwen-Image/Qwen-Image",
+                  "docs/diffusion/Qwen-Image/Qwen-Image-Edit"
+                ]
+              },
+              {
+                "group": "Z-Image",
+                "pages": [
+                  "docs/diffusion/Z-Image/Z-Image-Turbo"
+                ]
+              }
             ]
           },
           {
-            "group": "Autoregressive Models / Llama",
+            "group": "Others",
             "pages": [
-              "docs/autoregressive/Llama/Llama4-Scout",
-              "docs/autoregressive/Llama/Llama3.3-70B",
-              "docs/autoregressive/Llama/Llama3.1"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / GLM",
-            "pages": [
-              "docs/autoregressive/GLM/GLM-Glyph",
-              "docs/autoregressive/GLM/GLM-4.5",
-              "docs/autoregressive/GLM/GLM-4.5V",
-              "docs/autoregressive/GLM/GLM-4.6",
-              "docs/autoregressive/GLM/GLM-4.6V",
-              "docs/autoregressive/GLM/GLM-4.7",
-              "docs/autoregressive/GLM/GLM-4.7-Flash"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / OpenAI",
-            "pages": [
-              "docs/autoregressive/OpenAI/GPT-OSS"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / Moonshotai",
-            "pages": [
-              "docs/autoregressive/Moonshotai/Kimi-K2",
-              "docs/autoregressive/Moonshotai/Kimi-Linear"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / MiniMax",
-            "pages": [
-              "docs/autoregressive/MiniMax/MiniMax-M2"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / NVIDIA",
-            "pages": [
-              "docs/autoregressive/NVIDIA/Nemotron3-Nano"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / Ernie",
-            "pages": [
-              "docs/autoregressive/Ernie/Ernie4.5",
-              "docs/autoregressive/Ernie/Ernie4.5-VL"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / InternVL",
-            "pages": [
-              "docs/autoregressive/InternVL/InternVL3.5"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / InternLM",
-            "pages": [
-              "docs/autoregressive/InternLM/Intern-S1"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / Jina AI",
-            "pages": [
-              "docs/autoregressive/Jina/Jina-reranker-m0"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / Mistral",
-            "pages": [
-              "docs/autoregressive/Mistral/Mistral-3",
-              "docs/autoregressive/Mistral/Devstral-2"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / Xiaomi",
-            "pages": [
-              "docs/autoregressive/Xiaomi/MiMo-V2-Flash"
-            ]
-          },
-          {
-            "group": "Autoregressive Models / FlashLabs",
-            "pages": [
-              "docs/autoregressive/FlashLabs/Chroma1.0"
-            ]
-          },
-          {
-            "group": "Diffusion Models / FLUX",
-            "pages": [
-              "docs/diffusion/FLUX/FLUX"
-            ]
-          },
-          {
-            "group": "Diffusion Models / Wan",
-            "pages": [
-              "docs/diffusion/Wan/Wan2.1",
-              "docs/diffusion/Wan/Wan2.2"
-            ]
-          },
-          {
-            "group": "Diffusion Models / Qwen-Image",
-            "pages": [
-              "docs/diffusion/Qwen-Image/Qwen-Image",
-              "docs/diffusion/Qwen-Image/Qwen-Image-Edit"
-            ]
-          },
-          {
-            "group": "Diffusion Models / Z-Image",
-            "pages": [
-              "docs/diffusion/Z-Image/Z-Image-Turbo"
-            ]
-          },
-          {
-            "group": "Others / SpecBundle",
-            "pages": [
-              "docs/specbundle/supported_models",
-              "docs/specbundle/specbundle_usage"
-            ]
-          },
-          {
-            "group": "Others / Benchmarks",
-            "pages": [
-              "docs/base/benchmarks/autoregressive_model_benchmark",
-              "docs/base/benchmarks/diffusion_model_benchmark"
+              {
+                "group": "SpecBundle",
+                "pages": [
+                  "docs/specbundle/supported_models",
+                  "docs/specbundle/specbundle_usage"
+                ]
+              },
+              {
+                "group": "Benchmarks",
+                "pages": [
+                  "docs/base/benchmarks/autoregressive_model_benchmark",
+                  "docs/base/benchmarks/diffusion_model_benchmark"
+                ]
+              }
             ]
           },
           {

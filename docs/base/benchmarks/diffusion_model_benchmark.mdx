@@ -11,7 +11,7 @@ description: Benchmark diffusion model serving throughput and latency with SGLan
 
 Run a benchmark on a local server (port 30000) generating 1 videos/images from the `vbench` dataset.
 
-```
+```bash
 # For text to video: such as Wan2.2-T2V-A14B-Diffusers
 python3 -m sglang.multimodal_gen.benchmarks.bench_serving \
     --backend sglang-video --dataset vbench --task t2v --num-prompts 1 --max-concurrency 1
@@ -37,7 +37,7 @@ python3 -m sglang.multimodal_gen.benchmarks.bench_serving \
 
 Run a benchmark on a local server (port 30000) generating 20 videos/images from the `vbench` dataset.
 
-```
+```bash
 # For text to video: such as Wan2.2-T2V-A14B-Diffusers
 python3 -m sglang.multimodal_gen.benchmarks.bench_serving \
     --backend sglang-video --dataset vbench --task t2v --num-prompts 20 --max-concurrency 20
