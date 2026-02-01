@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "SGLang Cookbook",
+  "name": "SGLang",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -15,182 +15,325 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Docs",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "docs/documentation/introduction",
+              "docs/documentation/get_started/install"
+            ]
+          },
+          {
+            "group": "Basic Usage",
+            "pages": [
+              "docs/documentation/basic_usage/send_request",
+              {
+                "group": "OpenAI-Compatible APIs",
+                "pages": [
+                  "docs/documentation/basic_usage/openai_api_completions",
+                  "docs/documentation/basic_usage/openai_api_vision",
+                  "docs/documentation/basic_usage/openai_api_embeddings"
+                ]
+              },
+              "docs/documentation/basic_usage/ollama_api",
+              "docs/documentation/basic_usage/offline_engine_api",
+              "docs/documentation/basic_usage/native_api",
+              "docs/documentation/basic_usage/sampling_params",
+              {
+                "group": "Popular Model Usage",
+                "pages": [
+                  "docs/documentation/basic_usage/deepseek_v3",
+                  "docs/documentation/basic_usage/deepseek_v32",
+                  "docs/documentation/basic_usage/glm45",
+                  "docs/documentation/basic_usage/glmv",
+                  "docs/documentation/basic_usage/gpt_oss",
+                  "docs/documentation/basic_usage/kimi_k2_5",
+                  "docs/documentation/basic_usage/minimax_m2",
+                  "docs/documentation/basic_usage/qwen3",
+                  "docs/documentation/basic_usage/qwen3_vl",
+                  "docs/documentation/basic_usage/llama4"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Advanced Features",
+            "pages": [
+              "docs/documentation/advanced_features/server_arguments",
+              "docs/documentation/advanced_features/hyperparameter_tuning",
+              "docs/documentation/advanced_features/attention_backend",
+              "docs/documentation/advanced_features/speculative_decoding",
+              "docs/documentation/advanced_features/structured_outputs",
+              "docs/documentation/advanced_features/structured_outputs_for_reasoning_models",
+              "docs/documentation/advanced_features/tool_parser",
+              "docs/documentation/advanced_features/separate_reasoning",
+              "docs/documentation/advanced_features/quantization",
+              "docs/documentation/advanced_features/quantized_kv_cache",
+              "docs/documentation/advanced_features/expert_parallelism",
+              "docs/documentation/advanced_features/lora",
+              "docs/documentation/advanced_features/pd_disaggregation",
+              "docs/documentation/advanced_features/epd_disaggregation",
+              "docs/documentation/advanced_features/pipeline_parallelism",
+              {
+                "group": "Hierarchical KV Caching (HiCache)",
+                "pages": [
+                  "docs/documentation/advanced_features/hicache_best_practices",
+                  "docs/documentation/advanced_features/hicache_design",
+                  "docs/documentation/advanced_features/hicache_storage_runtime_attach_detach"
+                ]
+              },
+              "docs/documentation/advanced_features/vlm_query",
+              "docs/documentation/advanced_features/dp_for_multi_modal_encoder",
+              "docs/documentation/advanced_features/cuda_graph_for_multi_modal_encoder",
+              "docs/documentation/advanced_features/sgl_model_gateway",
+              "docs/documentation/advanced_features/deterministic_inference",
+              "docs/documentation/advanced_features/observability",
+              "docs/documentation/advanced_features/checkpoint_engine",
+              "docs/documentation/advanced_features/sglang_for_rl"
+            ]
+          },
+          {
+            "group": "Supported Models",
+            "pages": [
+              "docs/documentation/supported_models/generative_models",
+              "docs/documentation/supported_models/multimodal_language_models",
+              "docs/documentation/supported_models/diffusion_language_models",
+              "docs/documentation/supported_models/diffusion_models",
+              "docs/documentation/supported_models/embedding_models",
+              "docs/documentation/supported_models/reward_models",
+              "docs/documentation/supported_models/rerank_models",
+              "docs/documentation/supported_models/classify_models",
+              "docs/documentation/supported_models/support_new_models",
+              "docs/documentation/supported_models/transformers_fallback",
+              "docs/documentation/supported_models/modelscope",
+              "docs/documentation/supported_models/mindspore_models"
+            ]
+          },
+          {
+            "group": "Hardware Platforms",
+            "pages": [
+              "docs/documentation/platforms/amd_gpu",
+              "docs/documentation/platforms/cpu_server",
+              "docs/documentation/platforms/tpu",
+              "docs/documentation/platforms/nvidia_jetson",
+              {
+                "group": "Ascend NPUs",
+                "pages": [
+                  "docs/documentation/platforms/ascend_npu",
+                  "docs/documentation/platforms/ascend_npu_support_models",
+                  "docs/documentation/platforms/ascend_npu_deepseek_example",
+                  "docs/documentation/platforms/ascend_npu_qwen3_examples",
+                  "docs/documentation/platforms/ascend_contribution_guide",
+                  "docs/documentation/platforms/ascend_npu_best_practice"
+                ]
+              },
+              "docs/documentation/platforms/xpu"
+            ]
+          },
+          {
+            "group": "Developer Guide",
+            "pages": [
+              "docs/documentation/developer_guide/contribution_guide",
+              "docs/documentation/developer_guide/development_guide_using_docker",
+              "docs/documentation/developer_guide/JIT_kernels",
+              "docs/documentation/developer_guide/benchmark_and_profiling",
+              "docs/documentation/developer_guide/bench_serving",
+              "docs/documentation/developer_guide/evaluating_new_models"
+            ]
+          },
+          {
+            "group": "References",
+            "pages": [
+              "docs/documentation/references/faq",
+              "docs/documentation/references/environment_variables",
+              "docs/documentation/references/production_metrics",
+              "docs/documentation/references/production_request_trace",
+              {
+                "group": "Multi-Node Deployment",
+                "pages": [
+                  "docs/documentation/references/multi_node_deployment/multi_node",
+                  "docs/documentation/references/multi_node_deployment/deploy_on_k8s",
+                  "docs/documentation/references/multi_node_deployment/lws_pd/lws_pd_deploy",
+                  "docs/documentation/references/multi_node_deployment/rbg_pd/deepseekv32_pd"
+                ]
+              },
+              "docs/documentation/references/custom_chat_template",
+              {
+                "group": "Frontend Language",
+                "pages": [
+                  "docs/documentation/references/frontend/frontend_tutorial",
+                  "docs/documentation/references/frontend/choices_methods"
+                ]
+              },
+              "docs/documentation/references/post_training_integration",
+              "docs/documentation/references/learn_more"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Cookbook",
         "groups": [
           {
             "group": "Getting Started",
             "pages": [
-              "docs/intro"
+              "docs/cookbook/intro"
             ]
           },
           {
-            "group": "Autoregressive Models",
+            "group": "Autoregressive / Qwen",
             "pages": [
-              {
-                "group": "Qwen",
-                "pages": [
-                  "docs/autoregressive/Qwen/Qwen3",
-                  "docs/autoregressive/Qwen/Qwen3-Next",
-                  "docs/autoregressive/Qwen/Qwen3-VL",
-                  "docs/autoregressive/Qwen/Qwen3-Coder-480B-A35B",
-                  "docs/autoregressive/Qwen/Qwen2.5-VL"
-                ]
-              },
-              {
-                "group": "DeepSeek",
-                "pages": [
-                  "docs/autoregressive/DeepSeek/DeepSeek-V3_2",
-                  "docs/autoregressive/DeepSeek/DeepSeek-V3_1",
-                  "docs/autoregressive/DeepSeek/DeepSeek-V3",
-                  "docs/autoregressive/DeepSeek/DeepSeek-R1",
-                  "docs/autoregressive/DeepSeek/DeepSeek-OCR"
-                ]
-              },
-              {
-                "group": "Llama",
-                "pages": [
-                  "docs/autoregressive/Llama/Llama4-Scout",
-                  "docs/autoregressive/Llama/Llama3.3-70B",
-                  "docs/autoregressive/Llama/Llama3.1"
-                ]
-              },
-              {
-                "group": "GLM",
-                "pages": [
-                  "docs/autoregressive/GLM/GLM-Glyph",
-                  "docs/autoregressive/GLM/GLM-4.5",
-                  "docs/autoregressive/GLM/GLM-4.5V",
-                  "docs/autoregressive/GLM/GLM-4.6",
-                  "docs/autoregressive/GLM/GLM-4.6V",
-                  "docs/autoregressive/GLM/GLM-4.7",
-                  "docs/autoregressive/GLM/GLM-4.7-Flash"
-                ]
-              },
-              {
-                "group": "OpenAI",
-                "pages": [
-                  "docs/autoregressive/OpenAI/GPT-OSS"
-                ]
-              },
-              {
-                "group": "Moonshotai",
-                "pages": [
-                  "docs/autoregressive/Moonshotai/Kimi-K2",
-                  "docs/autoregressive/Moonshotai/Kimi-Linear"
-                ]
-              },
-              {
-                "group": "MiniMax",
-                "pages": [
-                  "docs/autoregressive/MiniMax/MiniMax-M2"
-                ]
-              },
-              {
-                "group": "NVIDIA",
-                "pages": [
-                  "docs/autoregressive/NVIDIA/Nemotron3-Nano"
-                ]
-              },
-              {
-                "group": "Ernie",
-                "pages": [
-                  "docs/autoregressive/Ernie/Ernie4.5",
-                  "docs/autoregressive/Ernie/Ernie4.5-VL"
-                ]
-              },
-              {
-                "group": "InternVL",
-                "pages": [
-                  "docs/autoregressive/InternVL/InternVL3.5"
-                ]
-              },
-              {
-                "group": "InternLM",
-                "pages": [
-                  "docs/autoregressive/InternLM/Intern-S1"
-                ]
-              },
-              {
-                "group": "Jina AI",
-                "pages": [
-                  "docs/autoregressive/Jina/Jina-reranker-m0"
-                ]
-              },
-              {
-                "group": "Mistral",
-                "pages": [
-                  "docs/autoregressive/Mistral/Mistral-3",
-                  "docs/autoregressive/Mistral/Devstral-2"
-                ]
-              },
-              {
-                "group": "Xiaomi",
-                "pages": [
-                  "docs/autoregressive/Xiaomi/MiMo-V2-Flash"
-                ]
-              },
-              {
-                "group": "FlashLabs",
-                "pages": [
-                  "docs/autoregressive/FlashLabs/Chroma1.0"
-                ]
-              }
+              "docs/cookbook/autoregressive/Qwen/Qwen3",
+              "docs/cookbook/autoregressive/Qwen/Qwen3-Next",
+              "docs/cookbook/autoregressive/Qwen/Qwen3-VL",
+              "docs/cookbook/autoregressive/Qwen/Qwen3-Coder-480B-A35B",
+              "docs/cookbook/autoregressive/Qwen/Qwen2.5-VL"
             ]
           },
           {
-            "group": "Diffusion Models",
+            "group": "Autoregressive / DeepSeek",
             "pages": [
-              {
-                "group": "FLUX",
-                "pages": [
-                  "docs/diffusion/FLUX/FLUX"
-                ]
-              },
-              {
-                "group": "Wan",
-                "pages": [
-                  "docs/diffusion/Wan/Wan2.1",
-                  "docs/diffusion/Wan/Wan2.2"
-                ]
-              },
-              {
-                "group": "Qwen-Image",
-                "pages": [
-                  "docs/diffusion/Qwen-Image/Qwen-Image",
-                  "docs/diffusion/Qwen-Image/Qwen-Image-Edit"
-                ]
-              },
-              {
-                "group": "Z-Image",
-                "pages": [
-                  "docs/diffusion/Z-Image/Z-Image-Turbo"
-                ]
-              }
+              "docs/cookbook/autoregressive/DeepSeek/DeepSeek-V3_2",
+              "docs/cookbook/autoregressive/DeepSeek/DeepSeek-V3_1",
+              "docs/cookbook/autoregressive/DeepSeek/DeepSeek-V3",
+              "docs/cookbook/autoregressive/DeepSeek/DeepSeek-R1",
+              "docs/cookbook/autoregressive/DeepSeek/DeepSeek-OCR"
             ]
           },
           {
-            "group": "Others",
+            "group": "Autoregressive / Llama",
             "pages": [
-              {
-                "group": "SpecBundle",
-                "pages": [
-                  "docs/specbundle/supported_models",
-                  "docs/specbundle/specbundle_usage"
-                ]
-              },
-              {
-                "group": "Benchmarks",
-                "pages": [
-                  "docs/base/benchmarks/autoregressive_model_benchmark",
-                  "docs/base/benchmarks/diffusion_model_benchmark"
-                ]
-              }
+              "docs/cookbook/autoregressive/Llama/Llama4-Scout",
+              "docs/cookbook/autoregressive/Llama/Llama3.3-70B",
+              "docs/cookbook/autoregressive/Llama/Llama3.1"
+            ]
+          },
+          {
+            "group": "Autoregressive / GLM",
+            "pages": [
+              "docs/cookbook/autoregressive/GLM/GLM-Glyph",
+              "docs/cookbook/autoregressive/GLM/GLM-4.5",
+              "docs/cookbook/autoregressive/GLM/GLM-4.5V",
+              "docs/cookbook/autoregressive/GLM/GLM-4.6",
+              "docs/cookbook/autoregressive/GLM/GLM-4.6V",
+              "docs/cookbook/autoregressive/GLM/GLM-4.7",
+              "docs/cookbook/autoregressive/GLM/GLM-4.7-Flash"
+            ]
+          },
+          {
+            "group": "Autoregressive / OpenAI",
+            "pages": [
+              "docs/cookbook/autoregressive/OpenAI/GPT-OSS"
+            ]
+          },
+          {
+            "group": "Autoregressive / Moonshotai",
+            "pages": [
+              "docs/cookbook/autoregressive/Moonshotai/Kimi-K2",
+              "docs/cookbook/autoregressive/Moonshotai/Kimi-Linear"
+            ]
+          },
+          {
+            "group": "Autoregressive / MiniMax",
+            "pages": [
+              "docs/cookbook/autoregressive/MiniMax/MiniMax-M2"
+            ]
+          },
+          {
+            "group": "Autoregressive / NVIDIA",
+            "pages": [
+              "docs/cookbook/autoregressive/NVIDIA/Nemotron3-Nano"
+            ]
+          },
+          {
+            "group": "Autoregressive / Ernie",
+            "pages": [
+              "docs/cookbook/autoregressive/Ernie/Ernie4.5",
+              "docs/cookbook/autoregressive/Ernie/Ernie4.5-VL"
+            ]
+          },
+          {
+            "group": "Autoregressive / InternVL",
+            "pages": [
+              "docs/cookbook/autoregressive/InternVL/InternVL3.5"
+            ]
+          },
+          {
+            "group": "Autoregressive / InternLM",
+            "pages": [
+              "docs/cookbook/autoregressive/InternLM/Intern-S1"
+            ]
+          },
+          {
+            "group": "Autoregressive / Jina AI",
+            "pages": [
+              "docs/cookbook/autoregressive/Jina/Jina-reranker-m0"
+            ]
+          },
+          {
+            "group": "Autoregressive / Mistral",
+            "pages": [
+              "docs/cookbook/autoregressive/Mistral/Mistral-3",
+              "docs/cookbook/autoregressive/Mistral/Devstral-2"
+            ]
+          },
+          {
+            "group": "Autoregressive / Xiaomi",
+            "pages": [
+              "docs/cookbook/autoregressive/Xiaomi/MiMo-V2-Flash"
+            ]
+          },
+          {
+            "group": "Autoregressive / FlashLabs",
+            "pages": [
+              "docs/cookbook/autoregressive/FlashLabs/Chroma1.0"
+            ]
+          },
+          {
+            "group": "Diffusion / FLUX",
+            "pages": [
+              "docs/cookbook/diffusion/FLUX/FLUX"
+            ]
+          },
+          {
+            "group": "Diffusion / Wan",
+            "pages": [
+              "docs/cookbook/diffusion/Wan/Wan2.1",
+              "docs/cookbook/diffusion/Wan/Wan2.2"
+            ]
+          },
+          {
+            "group": "Diffusion / Qwen-Image",
+            "pages": [
+              "docs/cookbook/diffusion/Qwen-Image/Qwen-Image",
+              "docs/cookbook/diffusion/Qwen-Image/Qwen-Image-Edit"
+            ]
+          },
+          {
+            "group": "Diffusion / Z-Image",
+            "pages": [
+              "docs/cookbook/diffusion/Z-Image/Z-Image-Turbo"
+            ]
+          },
+          {
+            "group": "Others / SpecBundle",
+            "pages": [
+              "docs/cookbook/specbundle/supported_models",
+              "docs/cookbook/specbundle/specbundle_usage"
+            ]
+          },
+          {
+            "group": "Others / Benchmarks",
+            "pages": [
+              "docs/cookbook/base/benchmarks/autoregressive_model_benchmark",
+              "docs/cookbook/base/benchmarks/diffusion_model_benchmark"
             ]
           },
           {
             "group": "Reference",
             "pages": [
-              "docs/base/reference/server_arguments"
+              "docs/cookbook/base/reference/server_arguments"
             ]
           }
         ]
@@ -201,7 +344,7 @@
     "links": [
       {
         "label": "GitHub",
-        "href": "https://github.com/sgl-project/sgl-cookbook",
+        "href": "https://github.com/sgl-project/sglang",
         "icon": "github"
       }
     ]
@@ -215,23 +358,23 @@
   "redirects": [
     {
       "source": "/autoregressive/:path*",
-      "destination": "/docs/autoregressive/:path*"
+      "destination": "/docs/cookbook/autoregressive/:path*"
     },
     {
       "source": "/diffusion/:path*",
-      "destination": "/docs/diffusion/:path*"
+      "destination": "/docs/cookbook/diffusion/:path*"
     },
     {
       "source": "/specbundle/:path*",
-      "destination": "/docs/specbundle/:path*"
+      "destination": "/docs/cookbook/specbundle/:path*"
     },
     {
       "source": "/base/:path*",
-      "destination": "/docs/base/:path*"
+      "destination": "/docs/cookbook/base/:path*"
     },
     {
       "source": "/intro",
-      "destination": "/docs/intro"
+      "destination": "/docs/cookbook/intro"
     }
   ]
 }
